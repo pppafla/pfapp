@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <title>PFApp</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/app.css" rel="stylesheet">
+
+</head>
+
+  <body>
+
+   <div class="container">
+     <img id="pic" src="img/fblogo.png" class="fb_logo text-center">
+	 <h1 class="text-center">Facebook PFApp</h1>
+	 <button id="fb_login" class="btn btn-primary btn-lg btn-block">Login with Facebook</button>
+	 <button id="fb_logout" class="btn btn-primary btn-lg btn-block">Logout</button>
+	 <form id="fb_form">
+	    <div class="form-group">
+		  <textarea name="post" id="post" class="form-control" placeholder="Post to Facebook..."></textarea>
+		</div>
+		<button type="submit" class="btn btn-default">Submit</button>
+	 </form>
+	 
+	 <div class="clearfix"></div>
+	 <div class="panel panel-default posts">
+	    <div class="panel-heading">
+		   <h3 class="panel-title">Latest Wall Posts</h3>
+		</div>
+		<div class="panel-body">
+		   <div id="fb_posts"></div>
+		</div>
+	 </div>
+   </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/app.js"></script>
+	
+  </body>
+</html>
+
